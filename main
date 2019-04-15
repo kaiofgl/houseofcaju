@@ -1,0 +1,13 @@
+base/ Base : animações, base, tipografia e utilidades.
+
+components/ Componentes : tem um único arquivo scss para cada componente individual
+
+layout/ Layout : cabeçalho, rodapé, grade, navegação
+
+pages/ Páginas : tenha um único scss para cada página específica
+
+themes/ Temas : lida com vários temas (opcional, ainda não usei)
+
+abstracts/ Resumos : manipula a função, mixins e variáveis
+
+vendors/ Fornecedor : lida com CSS de terceiros

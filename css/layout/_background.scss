@@ -1,0 +1,13 @@
+
+body{
+	background: $cor_main;
+}
+
+.div-background{
+	width: 50%;
+	height: 140%;
+	background: $cor_secundaria;
+	box-shadow: 7px 0px 10px $rgba20;
+	position: fixed;
+	z-index: -1;
+}

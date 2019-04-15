@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: Publica Sans Black;
+  src: url(../../fonts/PublicaSans-Black.otf); }
+@font-face {
+  font-family: Publica Sans Black Italic;
+  src: url(../../fonts/PublicaSans-BlackItalic.otf); }
+@font-face {
+  font-family: Publica Sans Bold;
+  src: url(../../fonts/PublicaSans-Bold.otf); }
+@font-face {
+  font-family: Publica Sans Bold Italic;
+  src: url(../../fonts/PublicaSans-BoldItalic.otf); }
+@font-face {
+  font-family: Publica Sans Extra Light Italic;
+  src: url(../../fonts/PublicaSans-ExtraLightItalic.otf); }
+@font-face {
+  font-family: Publica Sans Italic;
+  src: url(../../fonts/PublicaSans-Italic.otf); }
+@font-face {
+  font-family: Publica Sans Light;
+  src: url(../../fonts/PublicaSans-Light.otf); }
+@font-face {
+  font-family: Publica Sans Light Italic;
+  src: url(../../fonts/PublicaSans-LightItalic.otf); }
+@font-face {
+  font-family: Publica Sans Medium;
+  src: url(../../fonts/PublicaSans-Medium.otf); }
+@font-face {
+  font-family: Publica Sans Medium Italic;
+  src: url(../../fonts/PublicaSans-MediumItalic.otf); }
+@font-face {
+  font-family: Publica Sans Thin;
+  src: url(../../fonts/PublicaSans-Thin.otf); }
+@font-face {
+  font-family: Publica Sans Thin Italic;
+  src: url(../../fonts/PublicaSans-ThinItalic.otf); }
+@font-face {
+  font-family: Publica Sans Ultra Light;
+  src: url(../../fonts/PublicaSans-UltraLight.otf); }
+body {
+  background: #EFEFEF; }
+
+.div-background {
+  width: 50%;
+  height: 140%;
+  background: #FFF;
+  box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: -1; }
+
+::placeholder {
+  color: #6B6B6B;
+  opacity: 0.4; }
+
+.div-left {
+  width: 50%;
+  height: 130px;
+  float: left; }
+.div-right {
+  width: 50%;
+  height: 130px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .div-right .div-search {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: relative; }
+    .div-right .div-search input {
+      display: flex;
+      border: none;
+      padding: 13px;
+      width: 100%;
+      font-family: Publica Sans Medium;
+      letter-spacing: 8px;
+      font-size: 11px;
+      border-radius: 14px;
+      box-shadow: 0;
+      transition: 0.8s all; }
+      .div-right .div-search input:hover {
+        letter-spacing: 8px;
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2); }
+    .div-right .div-search button {
+      width: 10%;
+      background: none;
+      min-width: 40px;
+      border: none;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      margin-right: 10px;
+      cursor: pointer; }
+      .div-right .div-search button .fir, .div-right .div-search button .sec {
+        transition: 0.3s all;
+        opacity: 0.4; }
+      .div-right .div-search button .iten-lupa {
+        fill: #fff;
+        opacity: 0.4;
+        transition: 0.7s all; }
+      .div-right .div-search button:hover .iten-lupa {
+        fill: #6B6B6B;
+        opacity: 1; }
+      .div-right .div-search button:hover .fir {
+        fill: #6B6B6B;
+        opacity: 1; }
+      .div-right .div-search button:hover .sec {
+        fill: #6B6B6B;
+        opacity: 1; }
+
+.retangulo, .poligono, .elipse, .st0 {
+  transition: all 0.4s; }
+
+.logo {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Publica Sans Thin;
+  background: #EFEFEF; }
+  .logo .svg_logo {
+    width: 50%;
+    min-width: 100px;
+    transition: all 0.7s; }
+    .logo .svg_logo a {
+      background: #f00; }
+    .logo .svg_logo:hover .retangulo {
+      fill: #BE267A; }
+    .logo .svg_logo:hover .poligono {
+      fill: #2B9FB4; }
+    .logo .svg_logo:hover .elipse {
+      fill: #F0DB00; }
+    .logo .svg_logo:hover .st0 {
+      fill: #000000; }
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.navbar ul {
+  position: absolute; }
+  .navbar ul li {
+    display: inline-block; }
+    .navbar ul li a {
+      text-decoration: none;
+      font-size: 11px;
+      padding: 14px 10px;
+      font-family: Publica Sans Bold;
+      color: #6B6B6B;
+      transition: all 0.4s; }
+      .navbar ul li a:hover {
+        color: #000; }
+  .navbar ul .navbar-shop ul {
+    margin-top: 14px; }
+    .navbar ul .navbar-shop ul li {
+      position: relative;
+      display: block; }
+      .navbar ul .navbar-shop ul li a {
+        display: none;
+        opacity: 0; }
+
+.carrinho {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding-left: 30px; }
+  .carrinho h1 {
+    color: #6B6B6B;
+    margin-right: 25px;
+    font-family: Publica Sans Medium;
+    font-size: 15px;
+    float: left; }
+  .carrinho .car-icon {
+    width: 16%;
+    min-width: 40px;
+    fill: #000; }
+
+.container-body {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+
+.column-1 {
+  background: blue;
+  width: 75%;
+  height: 40px; }
+
+.column-2 {
+  background: green;
+  width: 100%;
+  height: 600px; }
+
+.column-3 {
+  background: red;
+  width: 75%;
+  height: 40px; }
+
+/*# sourceMappingURL=main.css.map */

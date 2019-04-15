@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #EFEFEF;
+}
+
+.div-background{
+	width: 50%;
+	height: 1400px;
+	background: #fff;
+	box-shadow: 7px 0px 10px rgba(0,0,0,0.20);
+	z-index: -1;
+	position: fixed;
+}
+
+
+
+/* FUNCAO CENTRALIZAR ITENS */
+.center-itens{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* PARTE NAVBAR ESQUERDA */
+.logo{
+	width: 50%;
+	background: #EFEFEF;
+	height: 100%;
+}
+.div-parte-1{
+	width: 50%;
+	height: 120px;
+	float: left;
+	display: flex;
+
+}
+
+
+/* PARTE NAVBAR DIREITA */
+.div-parte-2{
+	width: 50%;
+	height: 120px;
+	background: red;
+	float: left;
+}

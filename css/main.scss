@@ -1,0 +1,12 @@
+//RESET LAYOUT
+*{
+	margin: 0;
+	padding: 0;
+}
+@import "abstracts/vars"; 
+@import "base/fonts"; //IMPORTA FONTES
+@import "components/components"; 
+@import "layout/background"; 
+@import "layout/header"; 
+@import "layout/body"; 
+@import "abstracts/media"; 

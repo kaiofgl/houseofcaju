@@ -1,0 +1,30 @@
+//DIMENSÕES
+$altura_navbar : 130px;
+
+
+//CORES
+$cor_main : #EFEFEF;
+$cor_secundaria: #FFF;
+$cor_terciaria: #6B6B6B;
+$cor_fonte: #C8C8C8;
+$rgba20: rgba(0,0,0,0.20);
+
+@mixin center-itens{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@mixin center-itens-between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+@mixin center-itens-vertical{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}

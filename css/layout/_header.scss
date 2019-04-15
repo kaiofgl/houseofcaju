@@ -1,0 +1,165 @@
+::placeholder {
+	color: $cor_terciaria;
+	opacity: 0.4;
+}
+
+.div{
+	&-left{
+		width: 50%;
+		height: $altura_navbar;	
+		float: left;
+	}
+	&-right{
+		width: 50%;
+		height: $altura_navbar;
+		float: left;
+		@include center-itens;
+		& .div-search{
+			width: 50%;
+			height: 100%;
+			@include center-itens;
+			padding: 10px;
+			position: relative;
+			& input{
+				display: flex;
+				border: none;
+				padding: 13px;
+				width: 100%;
+				font-family: Publica Sans Medium;
+				letter-spacing: 8px;
+				font-size: 11px;
+				border-radius: 14px;
+				box-shadow: 0;
+				transition: 0.8s all;
+				&:hover{
+					letter-spacing: 8px;
+					box-shadow: 7px 7px 10px $rgba20 ;
+				}
+			}
+			& button{//lUPA
+				width: 10%;
+				background: none;
+				min-width: 40px;
+				border: none;
+				padding: 10px;
+				position: absolute;
+				right: 0;
+				margin-right: 10px; 
+				cursor: pointer;
+				& .fir, .sec{
+					transition: 0.3s all;
+					opacity: 0.4;
+				}
+				& .iten-lupa{
+					fill: #fff;
+					opacity: 0.4;
+					transition: 0.7s all;
+				}
+				&:hover .iten-lupa{
+					fill: $cor_terciaria;
+					opacity: 1;
+				}
+				&:hover .fir{
+					fill: $cor_terciaria;
+					opacity: 1;
+				}
+				&:hover .sec{
+					fill: $cor_terciaria;
+					opacity: 1;
+				}
+			}
+		}		
+	}
+}
+
+.retangulo, .poligono, .elipse,.st0{
+	transition: all 0.4s;
+}
+
+.logo{
+	width: 50%;
+	height: 100%;
+	float: left;
+	@include center-itens;
+	font-family: Publica Sans Thin;
+	background: $cor_main;
+	& .svg_logo{
+		width: 50%;
+		min-width: 100px;
+		transition: all 0.7s;
+		& a{
+			background: #f00;
+		}
+		&:hover{
+			& .retangulo{
+				fill: #BE267A;
+			}
+			& .poligono{
+				fill: #2B9FB4;
+			}
+			& .elipse{
+				fill: #F0DB00;
+			}
+			& .st0{
+				fill: #000000;
+			}
+		}
+	}
+}
+
+.navbar{
+	height: 100%;
+	@include center-itens;
+}
+
+.navbar{
+	ul{
+		position: absolute;
+		li{
+			display: inline-block;			
+			a{
+				text-decoration: none;
+				font-size: 11px;
+				padding: 14px 10px;
+				font-family: Publica Sans Bold;
+				color: $cor_terciaria;
+				transition: all 0.4s;
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+		& .navbar-shop{
+			ul{
+				margin-top: 14px;
+				li{
+					position: relative;
+					display: block;
+					a{
+						display: none;
+						opacity: 0;				
+					}
+				}
+			}
+		}
+	}
+}
+
+.carrinho{
+	width: 30%;
+	@include center-itens-between;
+	height: 100%;
+	padding-left: 30px;
+	h1{
+		color: $cor-terciaria;
+		margin-right: 25px;	
+		font-family: Publica Sans Medium;
+		font-size: 15px;
+		float: left;
+	}
+	.car-icon{
+		width: 16%;
+		min-width: 40px;
+		fill: #000;
+	}
+}
