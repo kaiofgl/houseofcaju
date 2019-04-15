@@ -1,22 +1,85 @@
 .container-body{
 	width: 100%;
-	float: left;
 	@include center-itens-between;
 }
 
-.column-1{
+.column-left{
 	background: blue;
 	width: 75%;
 	height: 40px;
 }
 
-.column-2{
-	background: green;
+.column-center{
 	width: 100%;
-	height: 600px;
+	height: 500px;
+	position: relative;
+	& .center-image{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		@include center-itens;
+		& .imagem{
+			position: relative;
+			width: 70%;
+			height: 70%;
+			background: url("../image/main.png");
+			background-size: 95%;
+			min-width: 400px;
+			background-repeat: no-repeat;
+
+		}
+	}
+	&-top-space{//ESPAÇAMENTO
+		display: flex;
+		position: absolute;
+		width: 100%;
+		height: 50px;	
+		justify-content: center;
+		align-items: center;
+		& h1{
+			color: $cor_terciaria;
+			display:flex;
+			position: absolute;
+			font-family: Publica Sans Bold;
+			font-size: $font-size-body;
+			margin-top: -10px;
+		}
+		& .line{
+			background: $cor_terciaria;
+			width: 70%;
+			height: 2px;
+			display: inline-block;
+	
+		}
+	}
+	&-right-space{//ESPAÇAMENTO
+		display: flex;
+		position: absolute;
+		right: 0;
+		width: 50px;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		& h1{
+			color: $cor_terciaria;
+			display:flex;
+			position: absolute;
+			margin-left: 22px;
+			font-family: Publica Sans Bold;
+			font-size: $font-size-body;
+		}
+		& .line{
+			background: $cor_terciaria;
+			width: 2px;
+			height: 70%;
+			display: inline-block;
+			
+		}
+	}
+
 }
 
-.column-3{
+.column-right{
 	background: red;
 	width: 75%;
 	height: 40px;

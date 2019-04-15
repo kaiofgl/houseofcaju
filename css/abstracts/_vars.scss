@@ -1,5 +1,5 @@
 //DIMENSÕES
-$altura_navbar : 130px;
+$altura_navbar : 100px;
 
 
 //CORES
@@ -8,6 +8,7 @@ $cor_secundaria: #FFF;
 $cor_terciaria: #6B6B6B;
 $cor_fonte: #C8C8C8;
 $rgba20: rgba(0,0,0,0.20);
+$font-size-body: 11px;
 
 @mixin center-itens{
 	display: flex;

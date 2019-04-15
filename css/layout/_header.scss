@@ -12,7 +12,6 @@
 	&-right{
 		width: 50%;
 		height: $altura_navbar;
-		float: left;
 		@include center-itens;
 		& .div-search{
 			width: 50%;
@@ -26,13 +25,13 @@
 				padding: 13px;
 				width: 100%;
 				font-family: Publica Sans Medium;
-				letter-spacing: 8px;
-				font-size: 11px;
+				letter-spacing: 6px;
+				font-size: 7px;
 				border-radius: 14px;
 				box-shadow: 0;
 				transition: 0.8s all;
 				&:hover{
-					letter-spacing: 8px;
+					letter-spacing: 7px;
 					box-shadow: 7px 7px 10px $rgba20 ;
 				}
 			}
@@ -84,7 +83,7 @@
 	font-family: Publica Sans Thin;
 	background: $cor_main;
 	& .svg_logo{
-		width: 50%;
+		width: 30%;
 		min-width: 100px;
 		transition: all 0.7s;
 		& a{
@@ -119,7 +118,7 @@
 			display: inline-block;			
 			a{
 				text-decoration: none;
-				font-size: 11px;
+				font-size: 9px;
 				padding: 14px 10px;
 				font-family: Publica Sans Bold;
 				color: $cor_terciaria;
@@ -154,8 +153,7 @@
 		color: $cor-terciaria;
 		margin-right: 25px;	
 		font-family: Publica Sans Medium;
-		font-size: 15px;
-		float: left;
+		font-size: 11px;
 	}
 	.car-icon{
 		width: 16%;
