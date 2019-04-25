@@ -16,4 +16,3 @@ $(".navbar-shop").hover(function() {
 		}, speed);
 	});
 });
-

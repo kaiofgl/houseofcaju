@@ -6,7 +6,10 @@ $altura_navbar : 100px;
 $cor_main : #EFEFEF;
 $cor_secundaria: #FFF;
 $cor_terciaria: #6B6B6B;
+$cor_quart: #95989A;
+$cor_quit: #4B4B4B;
 $cor_fonte: #C8C8C8;
+
 $rgba20: rgba(0,0,0,0.20);
 $font-size-body: 11px;
 
@@ -15,6 +18,19 @@ $font-size-body: 11px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+@mixin center-all($display,$content,$align,$text) {
+	@if $content == 1 {
+		$content: 'center';
+	} @else if $content == 2 {
+		$content: 'space-between';
+	}
+	
+	display: $display;
+	justify-content: $content;
+	align-items: $align;
+	text-align: $text;
 }
 
 @mixin center-itens-between{
