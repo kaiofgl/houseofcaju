@@ -1,0 +1,42 @@
+.footer-border{
+	background: #fff;
+	padding: 5px;
+}
+.footer{
+	width: 100%;
+	height: 400px;
+	background: $cor_main;
+	display: inline-block;
+	display: flex;
+	justify-content: space-between;
+	&-div{
+		height: 100%;
+
+		&-left{
+			font-family: Publica Sans Medium;
+			width: 66.6%;
+		}
+		&-right{
+			width: 34%;
+			background: $cor_quit;
+			& h1{
+				@include center-itens;
+				margin-top: 30px;
+				font-family: Publica Sans Ultralight;
+				font-size: 12px;
+				color: $cor_secundaria;
+			}	
+			& .social{
+				margin-top: 30px;
+				@include center-itens-between;
+				padding: 0 20px;
+				display: flex;
+				
+			}
+		}
+	}
+}
+
+.clearfix{
+	overflow: auto;
+}

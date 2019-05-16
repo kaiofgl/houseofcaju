@@ -1,0 +1,29 @@
+button{
+	border-style: none;
+}
+
+.button-main{
+	font-family: Publica Sans Thin;
+	
+	font-size: 11px;
+	height: 40px;
+	width: 180px; 
+	background: $cor_quit;
+	color:#EFEFEF;
+	transition: all 0.4s;
+
+	&:hover{
+		background: #6B6B6B;
+		color:#EFEFEF;
+		cursor: pointer;
+	}
+}
+
+
+.button-social{
+	width: 60px;
+	height: 60px;
+	
+
+
+}
