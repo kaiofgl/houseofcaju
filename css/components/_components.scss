@@ -4,7 +4,6 @@ button{
 
 .button-main{
 	font-family: Publica Sans Thin;
-	
 	font-size: 11px;
 	height: 40px;
 	width: 180px; 
@@ -19,11 +18,46 @@ button{
 	}
 }
 
-
+.button-second{
+	font-family: Publica Sans Light;
+	font-size: 11px;
+	height: 40px;
+	width: 100px; 
+	background: #EFEFEF;
+	color:#6B6B6B;
+	transition: all 0.4s;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	&:hover{
+		background: #6B6B6B;
+		color:#EFEFEF;
+		cursor: pointer;
+	}
+}
 .button-social{
-	width: 60px;
-	height: 60px;
-	
+	display: flex;
+	@include center-itens;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+	transition: all 0.4s;
+	background: #fff;
+	fill: $cor_quit;
+	&:hover{
+		fill: #000;
+	}
+}
 
-
+.input{
+	margin-top: 20px;
+	font-family: Publica Sans Light;
+	border-style: none;
+	text-decoration: none;
+	font-size: 11px;
+	padding: 14px 10px;
+	width: 60%;
+	margin-left: 10px;
 }
